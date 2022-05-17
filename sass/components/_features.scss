@@ -1,9 +1,24 @@
 .features__list {
   display: flex;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
 }
 
 .feature {
   width: 270px;
+
+  @media screen and (max-width: 767px) {
+    width: 450px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 
   &::before {
     display: flex;
@@ -18,28 +33,30 @@
 
   &__icon {
     &-antenna::before {
-      background-image: url(../images/icons/hw4/SVG/antenna.svg);
+      background-image: url(/images/icons/hw4/SVG/antenna.svg);
       background-size: 65.32px 70px;
     }
 
     &-clock::before {
-      background-image: url(../images/icons/hw4/SVG/clock.svg);
+      background-image: url(/images/icons/hw4/SVG/clock.svg);
       background-size: 66.96px 70px;
     }
 
     &-diagram::before {
-      background-image: url(../images/icons/hw4/SVG/diagram.svg);
+      background-image: url(/images/icons/hw4/SVG/diagram.svg);
       background-size: 70px 70px;
     }
 
     &-astronaut::before {
-      background-image: url(../images/icons/hw4/SVG/astronaut.svg);
+      background-image: url(/images/icons/hw4/SVG/astronaut.svg);
       background-size: 70px;
     }
   }
 
   &:not(:first-child) {
-    margin-left: 30px;
+    @media screen and (min-width: 1200px) {
+      margin-left: 30px;
+    }
   }
 
   &__title {
@@ -51,6 +68,10 @@
 
     margin-top: 0;
     margin-bottom: 10px;
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
   }
 
   &__text {

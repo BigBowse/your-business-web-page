@@ -14,7 +14,7 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
     <!-- main.min.css -->
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
 </head>
 
 <body class="page">
@@ -30,7 +30,7 @@
                         <li class="site-nav__list-item item"><a href="./index.html"
                                 class="site-nav__link link site-nav__link">Студія</a>
                         </li>
-                        <li class="site-nav__list-item item"><a href="./portfolio.html" class="site-nav__link link site-nav__link--active">
+                        <li class="site-nav__list-item item"><a href="./portfolio.html" class="site-nav__link--active link">
                                 Портфоліо</a></li>
                         <li class="site-nav__list-item item"><a href="/" class="site-nav__link link">Контакти</a></li>
                     </ul>
@@ -54,6 +54,12 @@
                         </a>
                     </li>
                 </ul>
+        
+                <button type="button" class="menu-button" mobile-menu-open>
+                    <svg class="menu-button__icon" width="40px" height="40px" aria-label="Перемикач мобільного меню">
+                        <use class="menu-button__icon-menu" href="./images/icons/symbol-defs.svg#icon-menu"></use>
+                    </svg>
+                </button>
             </div>
         </header>
 
@@ -73,7 +79,7 @@
                 <ul class="projects-list list">
                     <li class="projects-list__item">
                         <div class="product-thumb">
-                            <img src="./images/portfolio_technokriak.jpg" alt="Технокряк" width="370">
+                            <img src="./images/portfolio_technokriak.jpg" alt="Технокряк" width="370" class="product-thumb__image">
 
                             <div class="product-actions">
                                 <p class="product-actions__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -91,7 +97,7 @@
                     <li class="projects-list__item">
                         <div class="product-thumb">
                             <img src="./images/portfolio_neworleansvsgoldenstar.jpg"
-                                alt="Постер New Orlean vs Golden Star" width="370">
+                                alt="Постер New Orlean vs Golden Star" width="370" class="product-thumb__image">
 
                             <div class="product-actions">
                                 <p class="product-actions__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -108,7 +114,7 @@
 
                     <li class="projects-list__item">
                         <div class="product-thumb">
-                            <img src="./images/portfolio_seafood.jpg" alt="Ресторан Seafood" width="370">
+                            <img src="./images/portfolio_seafood.jpg" alt="Ресторан Seafood" width="370" class="product-thumb__image">
 
                             <div class="product-actions">
                                 <p class="product-actions__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -125,7 +131,7 @@
 
                     <li class="projects-list__item">
                         <div class="product-thumb">
-                            <img src="./images/portfolio_prime.jpg" alt="Проект Prime" width="370">
+                            <img src="./images/portfolio_prime.jpg" alt="Проект Prime" width="370" class="product-thumb__image">
 
                             <div class="product-actions">
                                 <p class="product-actions__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -142,7 +148,7 @@
 
                     <li class="projects-list__item">
                         <div class="product-thumb">
-                            <img src="./images/portfolio_boxes.jpg" alt="Проект Boxes" width="370">
+                            <img src="./images/portfolio_boxes.jpg" alt="Проект Boxes" width="370" class="product-thumb__image">
 
                             <div class="product-actions">
                                 <p class="product-actions__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -160,7 +166,7 @@
                     <li class="projects-list__item">
                         <div class="product-thumb">
                             <img src="./images/portfolio_inspirationhasnoborders.jpg" alt="Inspiration has no Borders"
-                                width="370">
+                                width="370" class="product-thumb__image">
 
                             <div class="product-actions">
                                 <p class="product-actions__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -177,7 +183,7 @@
 
                     <li class="projects-list__item">
                         <div class="product-thumb">
-                            <img src="./images/portfolio_limitededition.jpg" alt="Издание Limited Edition" width="370">
+                            <img src="./images/portfolio_limitededition.jpg" alt="Издание Limited Edition" width="370" class="product-thumb__image">
 
                             <div class="product-actions">
                                 <p class="product-actions__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -194,7 +200,7 @@
 
                     <li class="projects-list__item">
                         <div class="product-thumb">
-                            <img src="./images/portfolio_lab.jpg" alt="Проект LAB" width="370">
+                            <img src="./images/portfolio_lab.jpg" alt="Проект LAB" width="370" class="product-thumb__image">
 
                             <div class="product-actions">
                                 <p class="product-actions__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -211,7 +217,7 @@
 
                     <li class="projects-list__item">
                         <div class="product-thumb">
-                            <img src="./images/portfolio_growingbusiness.jpg" alt="Growing Business" width="370">
+                            <img src="./images/portfolio_growingbusiness.jpg" alt="Growing Business" width="370" class="product-thumb__image">
 
                             <div class="product-actions">
                                 <p class="product-actions__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
@@ -309,6 +315,63 @@
             </div>
         </div>
     </footer>
+
+    <!-- Mobile menu -->
+    <div class="mobile-backdrop is-hidden" mobile-menu>
+        <div class="mobile-menu">
+            <button type="button" class="mobile-menu-close-button" mobile-menu-close>
+                <svg class="mobile-menu-close-button__icon">
+                    <use href="./images/icons/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+    
+            <div class="mobile-menu-nav">
+                <nav class="mobile-site-nav">
+                    <ul class="mobile-menu-nav___list list">
+                        <li class="mobile-menu-nav__list-item item"><a href="./index.html"
+                                class="mobile-menu-nav__link link mobile-menu-nav__link">Студія</a>
+                        </li>
+                        <li class="mobile-menu-nav__list-item item"><a href="./portfolio.html"
+                                class="mobile-menu-nav__link link mobile-menu-nav__link--active">
+                                Портфоліо</a></li>
+                        <li class="mobile-menu-nav__list-item item"><a href="/"
+                                class="mobile-menu-nav__link link">Контакти</a></li>
+                    </ul>
+                </nav>
+    
+                <ul class="mobile-contact-list list">
+                    <li class="mobile-contact-list__item">
+                        <a href="tel:+38 096 111 11 11" class="mobile-contact-list__link link">
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                    <li class="mobile-contact-list__item item">
+                        <a href="mailto:info@devstudio.com" class="mobile-contact-list__link-email link">
+                            info@devstudio.com
+                        </a>
+                    </li>
+                </ul>
+    
+                <ul class="mobile-social-list list">
+                    <li class="mobile-social-list__item">
+                        <a href="/" class="mobile-social-list__link">Instagram</a>
+                    </li>
+                    <li class="mobile-social-list__item">
+                        <a href="/" class="mobile-social-list__link">Twitter</a>
+                    </li>
+                    <li class="mobile-social-list__item">
+                        <a href="/" class="mobile-social-list__link">Facebook</a>
+                    </li>
+                    <li class="mobile-social-list__item">
+                        <a href="/" class="mobile-social-list__link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script for mobile menu -->
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

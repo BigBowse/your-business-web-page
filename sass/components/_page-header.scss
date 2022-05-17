@@ -1,10 +1,24 @@
 .page-header {
+  position: relative;
+
   background-color: $primary-white-color;
 
   border-bottom: 1px solid $header-bottom-border-color;
 
+  @media screen and (max-width: 767px) {
+    width: 480px;
+    margin: 0 auto;
+  }
+
   &__nav {
     display: flex;
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 }
 
@@ -15,6 +29,10 @@
   &__list {
     display: flex;
     margin-left: 93px;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
 
     &-item:not(:first-child) {
       margin-left: 50px;
@@ -100,6 +118,10 @@
   align-items: center;
   margin-left: auto;
 
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
   &__item:not(:first-child) {
     margin-left: 50px;
   }
@@ -155,5 +177,22 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.menu-button {
+  background-color: $primary-white-color;
+  border: none;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  &__icon {
+    &-menu {
+      .menu-button & {
+        display: block;
+      }
+    }
   }
 }
