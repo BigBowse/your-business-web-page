@@ -5,12 +5,19 @@
     display: flex;
     flex-wrap: wrap;
 
-    width: 480px;
+    width: 450px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+
+    width: 738px;
   }
 }
 
 .customer {
   @media screen and (max-width: 767px) {
+    width: calc((100% - 30px) / 2);
     margin-bottom: 30px;
     padding: 0;
 
@@ -21,6 +28,10 @@
     &:nth-last-child(-n + 2) {
       margin-bottom: 0;
     }
+
+    &__link {
+      width: 100%;
+    }
   }
 
   &:not(:first-child) {
@@ -30,11 +41,6 @@
   }
 
   &__link {
-    @media screen and (max-width: 767px) {
-      display: flex;
-      width: 210px;
-    }
-
     display: flex;
     width: 170px;
     height: 92px;
