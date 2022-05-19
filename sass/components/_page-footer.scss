@@ -10,6 +10,11 @@
     margin: 0 auto;
   }
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 768px;
+    margin: 0 auto;
+  }
+
   &__container {
     display: flex;
 
@@ -19,11 +24,22 @@
       text-align: center;
       margin: 0 auto;
     }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
   }
 
   &__logo {
     display: inline-block;
     margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      display: block;
+      text-align: center;
+    }
   }
 }
 
@@ -35,6 +51,11 @@
   line-height: 1.71;
 
   @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    text-align: center;
     margin-bottom: 60px;
   }
 
@@ -91,6 +112,11 @@
     margin: 0 0 60px 0;
   }
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 60px;
+    margin-left: 0;
+  }
+
   &__title {
     text-transform: uppercase;
     color: $primary-white-color;
@@ -100,6 +126,10 @@
 
     margin-top: 0;
     margin-bottom: 20px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      text-align: center;
+    }
   }
 
   &__cardset {
@@ -156,6 +186,11 @@
     margin-left: 0;
   }
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    text-align: center;
+    margin-left: 0;
+  }
+
   &__title {
     text-transform: uppercase;
     color: $primary-white-color;
@@ -175,6 +210,10 @@
     display: block;
   }
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: block;
+  }
+
   &__input {
     width: 358px;
     height: 50px;
@@ -185,7 +224,7 @@
     border: 1px solid $color-border-footer-input;
     border-radius: 4px;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
       width: 450px;
       margin-bottom: 30px;
     }
@@ -215,7 +254,7 @@
 
   background-color: $accent-color;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     margin: 0 auto;
   }
 
