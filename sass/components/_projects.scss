@@ -126,6 +126,10 @@
 
   background-color: $primary-white-color;
 
+  &-one {
+    padding-bottom: 56px;
+  }
+
   &__title {
     color: $title-text-color;
     font-weight: 700;
