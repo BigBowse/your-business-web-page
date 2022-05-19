@@ -126,8 +126,10 @@
 
   background-color: $primary-white-color;
 
-  &-one {
-    padding-bottom: 56px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &-one {
+      padding-bottom: 56px;
+    }
   }
 
   &__title {
