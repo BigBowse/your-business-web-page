@@ -1811,6 +1811,7 @@ img {
     position: relative;
     width: 100%;
     height: 100%;
+    background-color: #ffffff;
   }
 }
 
@@ -1820,13 +1821,12 @@ img {
 }
 
 .mobile-menu {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  position: relative;
+  width: 480px;
   height: 100%;
   background-color: #ffffff;
-  overflow: hidden;
+  margin: 0 auto;
+  overflow-y: scroll;
 }
 
 @media screen and (min-width: 768px) {
