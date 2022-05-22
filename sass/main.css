@@ -122,14 +122,12 @@ img {
 
 @media screen and (max-width: 767px) {
   .page-header {
-    width: 480px;
     margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-header {
-    width: 768px;
     margin: 0 auto;
   }
 }
@@ -142,7 +140,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .page-header__nav {
-    width: 100%;
+    width: 480px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -154,7 +152,7 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-header__nav {
-    width: 100%;
+    width: 768px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -921,14 +919,12 @@ img {
 
 @media screen and (max-width: 767px) {
   .page-footer {
-    width: 480px;
     margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-footer {
-    width: 768px;
     margin: 0 auto;
   }
 }
@@ -941,7 +937,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .page-footer__container {
-    width: 100%;
+    width: 480px;
     display: block;
     text-align: center;
     margin: 0 auto;
@@ -950,7 +946,7 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-footer__container {
-    width: 100%;
+    width: 768px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
@@ -1245,6 +1241,12 @@ img {
             justify-content: start;
     width: 430px;
     margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .categories-list {
+    margin-bottom: 30px;
   }
 }
 
